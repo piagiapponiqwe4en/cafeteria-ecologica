@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Verde – Cafetería Ecológica</title>
+
+    <!-- Vincular CSS externo -->
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Café Verde</h1>
+        <p>Cafetería ecológica y sostenible</p>
+        <a class="boton" href="#reservas">Reservar Mesa</a>
+    </header>
+
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#mision">Misión y Valores</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="seccion" id="nosotros">
+        <h2>Nosotros</h2>
+        <p>En <strong>Café Verde</strong> unimos el mejor café artesanal con prácticas ecológicas: productos orgánicos, envases
+            biodegradables y apoyo a productores locales.</p>
+    </section>
+
+    <section class="seccion" id="mision">
+        <h2>Misión y Valores</h2>
+        <ul>
+            <li>🌱 Sostenibilidad ambiental</li>
+            <li>🤝 Comercio justo</li>
+            <li>☕ Calidad artesanal</li>
+            <li>🌍 Eliminamos plástico de un solo uso</li>
+            <li>💚 Espacio comunitario</li>
+        </ul>
+    </section>
+
+    <section class="seccion" id="menu">
+        <h2>Menú Ecológico</h2>
+        <ul>
+            <li>Café orgánico</li>
+            <li>Té natural</li>
+            <li>Repostería artesanal</li>
+            <li>Smoothies veganos</li>
+        </ul>
+    </section>
+
+    <section class="seccion" id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+            <img src="https://images.unsplash.com/photo-1529119368496-67a5a2c7e19c">
+        </div>
+    </section>
+
+    <section class="seccion" id="reservas">
+        <h2>Reservas</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Fecha y hora:</label>
+            <input type="datetime-local" required>
+
+            <label>Mensaje:</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <section class="seccion" id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Calle Verde 123, Ciudad Eco</p>
+        <p>📞 +34 123 456 789</p>
+        <p>✉️ contacto@cafeverde.com</p>
+    </section>
+
+    <footer>
+        © 2025 Café Verde – Emprendimiento ecológico 🌱
+    </footer>
+
+</body>
+</html>
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+/* Botón principal */
+.boton {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.boton:hover {
+    background-color: #2e7d32;
+}
+
+/* Menú superior */
+nav {
+    background-color: #1b5e20;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.seccion {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formulario */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    background-color: #1b5e20;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
